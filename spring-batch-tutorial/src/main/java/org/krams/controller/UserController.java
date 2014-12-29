@@ -36,7 +36,7 @@ public class UserController {
 		List<UserDto> dtos = new ArrayList<UserDto>();
 		for (User u: users) {
 			UserDto dto = new UserDto(u.getUsername(), u.getPassword(), u.getFirstName(),
-					u.getLastName(), u.getRole().getRole());
+					u.getLastName(), u.getRole()==null?null:u.getRole().getRole());
 			dtos.add(dto);
 		}
 		return dtos;
