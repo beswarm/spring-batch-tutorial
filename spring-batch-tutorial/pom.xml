@@ -14,8 +14,8 @@
     <spring.core.version>3.1.0.RELEASE</spring.core.version>
 	<spring.data.jpa.version>1.1.0.M1</spring.data.jpa.version>
 	<spring.batch.version>2.1.8.RELEASE</spring.batch.version>
-    
-  	<cglib.version>2.2</cglib.version>
+
+	  <cglib.version>2.2</cglib.version>
   	<aspectj.version>1.6.10</aspectj.version>
   	
   	<mysql.connector.version>5.1.16</mysql.connector.version>
@@ -98,7 +98,14 @@
 		<groupId>org.springframework.batch</groupId>
 		<artifactId>spring-batch-core</artifactId>
 		<version>${spring.batch.version}</version>
-	</dependency> 
+	</dependency>
+
+	  <!-- Spring Batch unit test -->
+	  <dependency>
+		  <groupId>org.springframework.batch</groupId>
+		  <artifactId>spring-batch-test</artifactId>
+		  <version>${spring.batch.version}</version>
+	  </dependency>
 
 	<!-- A seamless aspect-oriented extension to the Java programming language -->
 	<dependency>

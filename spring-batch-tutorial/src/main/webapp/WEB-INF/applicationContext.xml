@@ -33,7 +33,8 @@
 	<import resource="spring-batch-job1.xml"/>
 	<import resource="spring-batch-job2.xml"/>
 	<import resource="spring-batch-job3.xml"/>
-	
+	<import resource="spring-batch-job4.xml"/>
+
 	<bean id="deployProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean"
         p:location="/WEB-INF/spring.properties" />
         
